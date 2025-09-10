@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "total_files": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0.0,
+    "total_duration": 0.0,
+    "total_size_mb": 0.0,
+    "average_duration": 0.0
+  },
+  "results": [
+    {
+      "file": "./test_data/input/test.odex",
+      "status": "failed",
+      "output_path": null,
+      "duration": 0.0,
+      "error": "Invalid ODEX file format"
+    }
+  ],
+  "errors": [
+    {
+      "file": "./test_data/input/test.odex",
+      "error": "Invalid ODEX file format"
+    }
+  ],
+  "generated_at": "2025-09-10T04:39:58.911316"
+}
