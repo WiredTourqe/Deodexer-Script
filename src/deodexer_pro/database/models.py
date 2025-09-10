@@ -122,7 +122,7 @@ class FileResult(Base):
     error_code = Column(String(50), nullable=True)
     
     # Metadata
-    metadata = Column(Text)  # JSON string for additional data
+    file_metadata = Column(Text)  # JSON string for additional data
     
     # Relationships
     job = relationship("DeodexingJob", back_populates="file_results")
@@ -143,7 +143,7 @@ class FileResult(Base):
             'completed_at': self.completed_at.isoformat() if self.completed_at else None,
             'error_message': self.error_message,
             'error_code': self.error_code,
-            'metadata': json.loads(self.metadata) if self.metadata else {}
+            'metadata': json.loads(self.file_metadata) if self.file_metadata else {}
         }
 
 
@@ -167,7 +167,7 @@ class SystemMetrics(Base):
     average_processing_time = Column(Float, default=0.0)
     
     # Additional data
-    metadata = Column(Text)  # JSON string
+    system_metadata = Column(Text)  # JSON string
 
 
 class UserSession(Base):

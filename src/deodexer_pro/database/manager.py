@@ -220,7 +220,7 @@ class DatabaseManager:
                     output_path=output_path,
                     processing_duration=duration,
                     error_message=error_message,
-                    metadata=json.dumps(metadata or {}),
+                    file_metadata=json.dumps(metadata or {}),
                     completed_at=datetime.now() if status in [JobStatus.COMPLETED.value, JobStatus.FAILED.value] else None
                 )
                 
@@ -273,7 +273,7 @@ class DatabaseManager:
                     memory_usage_bytes=memory_bytes,
                     disk_usage_percent=disk_usage,
                     active_jobs=active_jobs,
-                    metadata=json.dumps(metadata or {})
+                    system_metadata=json.dumps(metadata or {})
                 )
                 
                 session.add(metrics)

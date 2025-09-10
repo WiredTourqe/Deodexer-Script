@@ -15,11 +15,8 @@ from ..core.config import config
 from ..core.logger import logger
 from ..core.deodexer import DeodexerEngine, DeodexingResult
 from ..database.manager import DatabaseManager
-from .components.job_manager import JobManagerFrame
-from .components.progress_monitor import ProgressMonitorFrame
-from .components.settings_manager import SettingsFrame
 from .components.dashboard import DashboardFrame
-from .components.file_browser import FileBrowserFrame
+from .components.simple_components import JobManagerFrame, ProgressMonitorFrame, SettingsFrame, FileBrowserFrame
 
 
 class DeodexerProGUI:
