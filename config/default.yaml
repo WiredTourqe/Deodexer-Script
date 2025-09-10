@@ -1,0 +1,76 @@
+# Application configuration
+app:
+  name: "Deodexer Pro"
+  version: "2.0.0"
+  debug: false
+  log_level: "INFO"
+  
+# GUI Configuration
+gui:
+  theme: "dark"
+  window:
+    width: 1200
+    height: 800
+    resizable: true
+    center_on_start: true
+  
+# Database Configuration
+database:
+  type: "sqlite"
+  path: "data/deodexer_pro.db"
+  backup_interval: 3600  # seconds
+  max_backups: 10
+  
+# Deodexing Configuration
+deodexing:
+  default_api_level: 29
+  max_workers: 8
+  timeout: 300  # seconds
+  retry_attempts: 3
+  temp_dir: "temp/"
+  
+# Security Configuration
+security:
+  encryption_enabled: true
+  session_timeout: 3600  # seconds
+  max_login_attempts: 3
+  
+# API Configuration
+api:
+  host: "127.0.0.1"
+  port: 8000
+  cors_origins: ["http://localhost:3000"]
+  rate_limit: 100  # requests per minute
+  
+# Machine Learning Configuration
+ml:
+  enabled: true
+  model_path: "data/models/"
+  prediction_threshold: 0.8
+  auto_optimization: true
+  
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/deodexer_pro.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+  
+# Performance Configuration
+performance:
+  cache_size: 100
+  memory_limit: 1073741824  # 1GB
+  cpu_affinity: []
+  
+# Export Configuration
+export:
+  formats: ["json", "xml", "csv", "pdf"]
+  default_format: "json"
+  include_metadata: true
+  
+# Plugin Configuration
+plugins:
+  enabled: true
+  directory: "plugins/"
+  auto_load: true

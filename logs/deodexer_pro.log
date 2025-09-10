@@ -1,0 +1,2 @@
+2025-09-10 02:53:10,159 - deodexer_pro - INFO - _log_with_context:105 - Deodexer Pro starting | version=2.0.0 | command=gui
+2025-09-10 02:53:10,165 - deodexer_pro - ERROR - _log_with_context:105 - GUI startup failed | error=No module named 'tkinter'
