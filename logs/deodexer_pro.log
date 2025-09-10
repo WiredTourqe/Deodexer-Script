@@ -1,2 +1,14 @@
 2025-09-10 02:53:10,159 - deodexer_pro - INFO - _log_with_context:105 - Deodexer Pro starting | version=2.0.0 | command=gui
 2025-09-10 02:53:10,165 - deodexer_pro - ERROR - _log_with_context:105 - GUI startup failed | error=No module named 'tkinter'
+2025-09-10 04:39:58,861 - deodexer_pro - INFO - _log_with_context:105 - Deodexer Pro starting | version=2.0.0 | command=cli
+2025-09-10 04:39:58,862 - deodexer_pro - INFO - _log_with_context:105 - Starting CLI deodexing | input_dir=./test_data/input | output_dir=./test_data/output
+2025-09-10 04:39:58,862 - deodexer_pro - WARNING - _log_with_context:105 - Baksmali JAR not found in standard locations
+2025-09-10 04:39:58,863 - deodexer_pro - INFO - _log_with_context:105 - ML optimizer initialized | enabled=True
+2025-09-10 04:39:58,910 - deodexer_pro - INFO - _log_with_context:105 - Java environment verified
+2025-09-10 04:39:58,910 - deodexer_pro - WARNING - _log_with_context:105 - Baksmali JAR not configured
+2025-09-10 04:39:58,910 - deodexer_pro - INFO - _log_with_context:105 - Baksmali JAR path updated | path=./tools/baksmali-mock.jar
+2025-09-10 04:39:58,910 - deodexer_pro - INFO - _log_with_context:105 - Starting batch deodexing | total_files=1 | max_workers=4
+2025-09-10 04:39:58,911 - deodexer_pro - INFO - _log_with_context:105 - Progress | completed=1 | total=1
+2025-09-10 04:39:58,911 - deodexer_pro - INFO - _log_with_context:105 - Batch deodexing completed | total=1 | successful=0 | failed=1
+2025-09-10 04:39:58,911 - deodexer_pro - INFO - _log_with_context:105 - Report exported | filename=deodexing_report_20250910_043958.json | format=json
+2025-09-10 04:39:58,911 - deodexer_pro - INFO - _log_with_context:105 - CLI deodexing completed | total_files=1 | successful=0 | failed=1 | report_file=deodexing_report_20250910_043958.json
